@@ -4,6 +4,6 @@ ONLY TESTED ON VERSION 6.9.2020s
 (made for speedrunning lmao)
 
 Seeds:
-Skeld (Storage-Admin-Nav): 32
-Mira HQ (Storage-Locker-Lab): 13
-Polus (Office-DecontamR-DecontamM): 16
+Skeld (Storage-Admin-Nav): 32 <br>
+Mira HQ (Storage-Locker-Lab): 13 <br>
+Polus (Office-DecontamR-DecontamM): 16 <br>
