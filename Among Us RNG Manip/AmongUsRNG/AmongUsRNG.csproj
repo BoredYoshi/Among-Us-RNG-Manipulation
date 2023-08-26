@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC271B79-8891-413F-9F63-D6126B6FFCC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmongUsRNG</RootNamespace>
+    <AssemblyName>AmongUsRNG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Apple">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Apple.dll</HintPath>
+    </Reference>
+    <Reference Include="Apple - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Apple - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Assembly-CSharp - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Assembly-CSharp-firstpass - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.VersionUtilities">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\AssetRipper.VersionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetsTools.NET">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\AssetsTools.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="bHapticsLib">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\bHapticsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookStore">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\FacebookStore.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookStore - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\FacebookStore - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="Hazel">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Hazel.dll</HintPath>
+    </Reference>
+    <Reference Include="Hazel - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Hazel - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDummyDll">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Il2CppDummyDll.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDummyDll - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Il2CppDummyDll - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="IndexRange">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\IndexRange.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\Mono.Security - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tomlet">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.AIModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.AndroidJNIModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.AnimationModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.AssetBundleModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.AudioModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Downloads\New folder (2)\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.DirectorModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.GridModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.ImageConversionModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.IMGUIModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.InputLegacyModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.InputModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.JSONSerializeModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.ParticleSystemModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.Physics2DModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.PhysicsModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.Purchasing - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.ScreenCaptureModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.SharedInternalsModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.SpriteMaskModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.SubsystemsModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.TerrainModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.TextRenderingModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.TilemapModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UI - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UIElementsModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UIModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UnityAnalyticsModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UnityWebRequestModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.UnityWebRequestWWWModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.VFXModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.VideoModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.VRModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\UnityEngine.XRModule - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="ValueTupleBridge">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\ValueTupleBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocketDotNet">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us\MelonLoader\WebSocketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="winrt - Copy">
+      <HintPath>..\..\..\..\..\Downloads\Il2CppDumper-v6.4.12\DummyDll\winrt - Copy.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MelonLoaderMod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
